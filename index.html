@@ -133,6 +133,53 @@ const legalPages = {
       <p>Sitio web registrado conforme a la Ley 34/2002 de Servicios de la Sociedad de la Información (LSSI).</p>
     `
   }
+  ,
+  about: {
+    title: '👋 Sobre nosotros',
+    date: '',
+    body: `
+      <h3>Quiénes somos</h3>
+      <p>PrimeDeals es un proyecto independiente creado por un pequeño equipo de aficionados a la tecnología y las compras online. Nuestro objetivo es ayudarte a descubrir las mejores ofertas disponibles en Amazon España, ahorrándote tiempo y dinero.</p>
+      <h3>Cómo trabajamos</h3>
+      <p>Analizamos miles de productos, revisamos valoraciones reales de usuarios y comparamos precios para ofrecerte solo aquellos artículos que consideramos una compra inteligente.</p>
+      <h3>Nuestro compromiso</h3>
+      <p>Independencia editorial, transparencia sobre nuestra relación como afiliados de Amazon y honestidad en cada recomendación.</p>
+    `
+  },
+  howtobuy: {
+    title: '🛒 ¿Cómo comprar?',
+    date: '',
+    body: `
+      <h3>Comprar es muy sencillo</h3>
+      <ol>
+        <li>Explora los productos por categoría o utiliza el buscador.</li>
+        <li>Haz clic en el botón <strong>"Ver en Amazon"</strong> del producto que te interese.</li>
+        <li>Serás redirigido a la ficha oficial del producto en Amazon.es.</li>
+        <li>Completa la compra directamente en Amazon con total seguridad.</li>
+      </ol>
+      <h3>Precios y disponibilidad</h3>
+      <p>Los precios que mostramos son orientativos y pueden variar. El precio y disponibilidad definitivos son los que aparecen en Amazon en el momento de la compra.</p>
+      <h3>Pago y envío</h3>
+      <p>La compra, el pago, el envío y la atención al cliente los gestiona íntegramente <strong>Amazon</strong>. Si tienes cuenta Prime, disfrutarás de sus condiciones de envío habituales.</p>
+    `
+  },
+  returns: {
+    title: '↩️ Devoluciones',
+    date: '',
+    body: `
+      <h3>Devoluciones gestionadas por Amazon</h3>
+      <p>Todas las compras se realizan en Amazon.es, por lo que las devoluciones se rigen por la <strong>política oficial de devoluciones de Amazon</strong>.</p>
+      <h3>Plazo general</h3>
+      <p>La mayoría de productos pueden devolverse en un plazo de <strong>30 días</strong> desde la recepción. Algunos artículos tienen plazos ampliados durante campañas especiales.</p>
+      <h3>Cómo iniciar una devolución</h3>
+      <ol>
+        <li>Accede a <a href="https://www.amazon.es/gp/your-account/order-history" target="_blank" rel="noopener noreferrer">Tus Pedidos</a> en Amazon.</li>
+        <li>Selecciona el producto y pulsa <strong>"Devolver o reemplazar artículos"</strong>.</li>
+        <li>Sigue las instrucciones para imprimir la etiqueta y enviar el paquete.</li>
+      </ol>
+      <p>Más información en el <a href="https://www.amazon.es/gp/help/customer/display.html?nodeId=GKM69DUUYKQWKWX7" target="_blank" rel="noopener noreferrer">Centro de Devoluciones de Amazon</a>.</p>
+    `
+  }
 };
 
 function openLegal(page) {
@@ -1666,7 +1713,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     ✨ Las mejores ofertas de Amazon España · Actualizado hoy · Envío Prime disponible
   </div>
   <div class="header-main">
-    <a href="#" class="logo" aria-label="PrimeDeals inicio">
+    <a href="#top" class="logo" aria-label="PrimeDeals inicio">
       <div class="logo-icon">💜</div>
       <span class="logo-text">Prime<span>Deals</span></span>
     </a>
@@ -2141,40 +2188,40 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
       <span style="font-size:1.4rem;font-weight:800;color:white;display:block;margin-bottom:0.8rem;">Prime<span style="background:linear-gradient(135deg,#8B85FF,#FF6B9D);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Deals</span></span>
       <p>Tu guía de confianza para encontrar las mejores ofertas de Amazon España. Productos verificados y seleccionados para ti.</p>
       <div class="footer-social">
-        <a href="#" class="social-btn" aria-label="Instagram">📸</a>
-        <a href="#" class="social-btn" aria-label="TikTok">🎵</a>
-        <a href="#" class="social-btn" aria-label="Pinterest">📌</a>
-        <a href="#" class="social-btn" aria-label="YouTube">▶️</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">📸</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">🎵</a>
+        <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Pinterest">📌</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="YouTube">▶️</a>
       </div>
     </div>
     <div class="footer-col">
       <h4>Categorías</h4>
       <ul class="footer-links">
-        <li><a href="#" onclick="filterProducts('tecnologia')">📱 Tecnología</a></li>
-        <li><a href="#" onclick="filterProducts('hogar')">🏠 Hogar</a></li>
-        <li><a href="#" onclick="filterProducts('moda')">👗 Moda</a></li>
-        <li><a href="#" onclick="filterProducts('belleza')">💄 Belleza</a></li>
-        <li><a href="#" onclick="filterProducts('cocina')">🍳 Cocina</a></li>
+        <li><a href="javascript:void(0)" onclick="filterProducts('tecnologia')">📱 Tecnología</a></li>
+        <li><a href="javascript:void(0)" onclick="filterProducts('hogar')">🏠 Hogar</a></li>
+        <li><a href="javascript:void(0)" onclick="filterProducts('moda')">👗 Moda</a></li>
+        <li><a href="javascript:void(0)" onclick="filterProducts('belleza')">💄 Belleza</a></li>
+        <li><a href="javascript:void(0)" onclick="filterProducts('cocina')">🍳 Cocina</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Información</h4>
       <ul class="footer-links">
-        <li><a href="#">Sobre nosotros</a></li>
-        <li><a href="#">Política de privacidad</a></li>
-        <li><a href="#">Términos de uso</a></li>
-        <li><a href="#">Cookies</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="javascript:void(0)" onclick="openLegal('about')">Sobre nosotros</a></li>
+        <li><a href="javascript:void(0)" onclick="openLegal('privacy')">Política de privacidad</a></li>
+        <li><a href="javascript:void(0)" onclick="openLegal('terms')">Términos de uso</a></li>
+        <li><a href="javascript:void(0)" onclick="openLegal('cookies')">Cookies</a></li>
+        <li><a href="javascript:void(0)" onclick="openLegal('contact')">Contacto</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Ayuda</h4>
       <ul class="footer-links">
-        <li><a href="#">¿Cómo comprar?</a></li>
-        <li><a href="#">Amazon Prime</a></li>
-        <li><a href="#">Devoluciones</a></li>
-        <li><a href="#">Preguntas frecuentes</a></li>
-        <li><a href="#">Atención al cliente</a></li>
+        <li><a href="javascript:void(0)" onclick="openLegal('howtobuy')">¿Cómo comprar?</a></li>
+        <li><a href="https://www.amazon.es/amazonprime" target="_blank" rel="noopener noreferrer">Amazon Prime</a></li>
+        <li><a href="javascript:void(0)" onclick="openLegal('returns')">Devoluciones</a></li>
+        <li><a href="javascript:void(0)" onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})">Preguntas frecuentes</a></li>
+        <li><a href="javascript:void(0)" onclick="openLegal('contact')">Atención al cliente</a></li>
       </ul>
     </div>
   </div>
@@ -2193,7 +2240,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 </div>
 <div class="footer-bottom">
     <span>© 2025 PrimeDeals · Todos los derechos reservados</span>
-    <span>Amazon y el logotipo de Amazon son marcas registradas de Amazon.com, Inc. · <a href="#">Privacidad</a></span>
+    <span>Amazon y el logotipo de Amazon son marcas registradas de Amazon.com, Inc. · <a href="javascript:void(0)" onclick="openLegal('privacy')">Privacidad</a></span>
   </div>
 </footer>
 
@@ -2255,64 +2302,64 @@ const AFFILIATE = 'https://amzn.to/4b4SBd5';
 
 const products = [
   // TECNOLOGÍA
-  { id:1, category:'tecnologia', name:'Echo Dot (5ª Gen) Altavoz Inteligente con Alexa', price:'€34.99', originalPrice:'€64.99', discount:'-46%', rating:'4.8', reviews:'42.1K', badge:'prime', badgeText:'📦 PRIME', img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:2, category:'tecnologia', name:'Kindle Paperwhite 16GB Pantalla 6.8"', price:'€134.99', originalPrice:'€169.99', discount:'-21%', rating:'4.9', reviews:'28.4K', badge:'top', badgeText:'🏆 TOP 1', img:'https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:3, category:'tecnologia', name:'Fire TV Stick 4K Max con Control por Voz', price:'€54.99', originalPrice:'€79.99', discount:'-31%', rating:'4.7', reviews:'19.8K', badge:'deal', badgeText:'💜 OFERTA', img:'https://images.unsplash.com/photo-1593359677879-a4bb92f829e1?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:4, category:'tecnologia', name:'Auriculares Sony WH-1000XM5 Cancelación de Ruido', price:'€279.00', originalPrice:'€419.00', discount:'-33%', rating:'4.9', reviews:'15.2K', badge:'top', badgeText:'🏆 TOP', img:'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:5, category:'tecnologia', name:'Tablet Samsung Galaxy A9+ 11" 128GB WiFi', price:'€259.00', originalPrice:'€359.00', discount:'-28%', rating:'4.6', reviews:'8.9K', badge:'deal', badgeText:'💜 OFERTA', img:'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:6, category:'tecnologia', name:'Ratón Inalámbrico Logitech MX Master 3S', price:'€79.99', originalPrice:'€109.99', discount:'-27%', rating:'4.8', reviews:'11.3K', badge:'top', badgeText:'🏆 TOP', img:'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
+  { id:1, category:'tecnologia', name:'Echo Dot (5ª Gen) Altavoz Inteligente con Alexa', price:'€34.99', originalPrice:'€64.99', discount:'-46%', rating:'4.8', reviews:'42.1K', badge:'prime', badgeText:'📦 PRIME', img:'https://loremflickr.com/400/400/amazon,echo,speaker?lock=1', shipping:'Prime: mañana', prime:true },
+  { id:2, category:'tecnologia', name:'Kindle Paperwhite 16GB Pantalla 6.8"', price:'€134.99', originalPrice:'€169.99', discount:'-21%', rating:'4.9', reviews:'28.4K', badge:'top', badgeText:'🏆 TOP 1', img:'https://loremflickr.com/400/400/kindle,ereader,book?lock=2', shipping:'Prime: mañana', prime:true },
+  { id:3, category:'tecnologia', name:'Fire TV Stick 4K Max con Control por Voz', price:'€54.99', originalPrice:'€79.99', discount:'-31%', rating:'4.7', reviews:'19.8K', badge:'deal', badgeText:'💜 OFERTA', img:'https://loremflickr.com/400/400/firetv,streaming,television?lock=3', shipping:'Prime: mañana', prime:true },
+  { id:4, category:'tecnologia', name:'Auriculares Sony WH-1000XM5 Cancelación de Ruido', price:'€279.00', originalPrice:'€419.00', discount:'-33%', rating:'4.9', reviews:'15.2K', badge:'top', badgeText:'🏆 TOP', img:'https://loremflickr.com/400/400/sony,headphones,wireless?lock=4', shipping:'Prime: mañana', prime:true },
+  { id:5, category:'tecnologia', name:'Tablet Samsung Galaxy A9+ 11" 128GB WiFi', price:'€259.00', originalPrice:'€359.00', discount:'-28%', rating:'4.6', reviews:'8.9K', badge:'deal', badgeText:'💜 OFERTA', img:'https://loremflickr.com/400/400/samsung,tablet,android?lock=5', shipping:'Prime: mañana', prime:true },
+  { id:6, category:'tecnologia', name:'Ratón Inalámbrico Logitech MX Master 3S', price:'€79.99', originalPrice:'€109.99', discount:'-27%', rating:'4.8', reviews:'11.3K', badge:'top', badgeText:'🏆 TOP', img:'https://loremflickr.com/400/400/logitech,mouse,computer?lock=6', shipping:'Prime: mañana', prime:true },
 
   // HOGAR
-  { id:7, category:'hogar', name:'Roomba j7+ Robot Aspirador con Vaciado Automático', price:'€449.00', originalPrice:'€699.00', discount:'-36%', rating:'4.7', reviews:'6.8K', badge:'deal', badgeText:'💜 OFERTA', img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:8, category:'hogar', name:'Philips Hue Kit Inicio 3 Bombillas LED Inteligentes', price:'€79.95', originalPrice:'€129.95', discount:'-38%', rating:'4.7', reviews:'14.2K', badge:'prime', badgeText:'📦 PRIME', img:'https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:9, category:'hogar', name:'Freidora de Aire Tefal Easy Fry Deluxe 4.2L', price:'€69.99', originalPrice:'€119.99', discount:'-42%', rating:'4.6', reviews:'9.4K', badge:'deal', badgeText:'💜 OFERTA', img:'https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:10, category:'hogar', name:'Cafetera Nespresso Vertuo Next con Aeroccino 3', price:'€99.00', originalPrice:'€179.00', discount:'-45%', rating:'4.8', reviews:'22.7K', badge:'top', badgeText:'🏆 TOP 1', img:'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:11, category:'hogar', name:'Set Sartenes Antiadherentes Tefal Titanium 3 Piezas', price:'€44.99', originalPrice:'€89.99', discount:'-50%', rating:'4.6', reviews:'7.1K', badge:'deal', badgeText:'💜 OFERTA', img:'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
+  { id:7, category:'hogar', name:'Roomba j7+ Robot Aspirador con Vaciado Automático', price:'€449.00', originalPrice:'€699.00', discount:'-36%', rating:'4.7', reviews:'6.8K', badge:'deal', badgeText:'💜 OFERTA', img:'https://loremflickr.com/400/400/roomba,robot,vacuum?lock=7', shipping:'Prime: mañana', prime:true },
+  { id:8, category:'hogar', name:'Philips Hue Kit Inicio 3 Bombillas LED Inteligentes', price:'€79.95', originalPrice:'€129.95', discount:'-38%', rating:'4.7', reviews:'14.2K', badge:'prime', badgeText:'📦 PRIME', img:'https://loremflickr.com/400/400/philips,hue,lightbulb?lock=8', shipping:'Prime: mañana', prime:true },
+  { id:9, category:'hogar', name:'Freidora de Aire Tefal Easy Fry Deluxe 4.2L', price:'€69.99', originalPrice:'€119.99', discount:'-42%', rating:'4.6', reviews:'9.4K', badge:'deal', badgeText:'💜 OFERTA', img:'https://loremflickr.com/400/400/airfryer,fryer,kitchen?lock=9', shipping:'Prime: mañana', prime:true },
+  { id:10, category:'hogar', name:'Cafetera Nespresso Vertuo Next con Aeroccino 3', price:'€99.00', originalPrice:'€179.00', discount:'-45%', rating:'4.8', reviews:'22.7K', badge:'top', badgeText:'🏆 TOP 1', img:'https://loremflickr.com/400/400/nespresso,coffee,machine?lock=10', shipping:'Prime: mañana', prime:true },
+  { id:11, category:'hogar', name:'Set Sartenes Antiadherentes Tefal Titanium 3 Piezas', price:'€44.99', originalPrice:'€89.99', discount:'-50%', rating:'4.6', reviews:'7.1K', badge:'deal', badgeText:'💜 OFERTA', img:'https://loremflickr.com/400/400/pan,skillet,cookware?lock=11', shipping:'Prime: mañana', prime:true },
 
   // MODA
-  { id:12, category:'moda', name:'Zapatillas Nike Revolution 6 Hombre/Mujer', price:'€44.99', originalPrice:'€74.99', discount:'-40%', rating:'4.5', reviews:'18.9K', badge:'prime', badgeText:'📦 PRIME', img:'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:13, category:'moda', name:'Bolso Mochila Antirobo USB Hombre Mujer 35L', price:'€29.99', originalPrice:'€59.99', discount:'-50%', rating:'4.6', reviews:'12.4K', badge:'deal', badgeText:'💜 OFERTA', img:'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:14, category:'moda', name:'Reloj Casio Hombre Clásico Resistente al Agua', price:'€22.99', originalPrice:'€45.99', discount:'-50%', rating:'4.7', reviews:'8.6K', badge:'top', badgeText:'🏆 TOP', img:'https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:15, category:'moda', name:'Gafas de Sol Hawkers Polarizadas UV400', price:'€19.99', originalPrice:'€49.99', discount:'-60%', rating:'4.5', reviews:'5.3K', badge:'deal', badgeText:'💜 OFERTA', img:'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
+  { id:12, category:'moda', name:'Zapatillas Nike Revolution 6 Hombre/Mujer', price:'€44.99', originalPrice:'€74.99', discount:'-40%', rating:'4.5', reviews:'18.9K', badge:'prime', badgeText:'📦 PRIME', img:'https://loremflickr.com/400/400/nike,sneakers,shoes?lock=12', shipping:'Prime: mañana', prime:true },
+  { id:13, category:'moda', name:'Bolso Mochila Antirobo USB Hombre Mujer 35L', price:'€29.99', originalPrice:'€59.99', discount:'-50%', rating:'4.6', reviews:'12.4K', badge:'deal', badgeText:'💜 OFERTA', img:'https://loremflickr.com/400/400/backpack,bag,travel?lock=13', shipping:'Prime: mañana', prime:true },
+  { id:14, category:'moda', name:'Reloj Casio Hombre Clásico Resistente al Agua', price:'€22.99', originalPrice:'€45.99', discount:'-50%', rating:'4.7', reviews:'8.6K', badge:'top', badgeText:'🏆 TOP', img:'https://loremflickr.com/400/400/casio,watch,wrist?lock=14', shipping:'Prime: mañana', prime:true },
+  { id:15, category:'moda', name:'Gafas de Sol Hawkers Polarizadas UV400', price:'€19.99', originalPrice:'€49.99', discount:'-60%', rating:'4.5', reviews:'5.3K', badge:'deal', badgeText:'💜 OFERTA', img:'https://loremflickr.com/400/400/sunglasses,eyewear,fashion?lock=15', shipping:'Prime: mañana', prime:true },
 
   // BELLEZA
-  { id:16, category:'belleza', name:'Secador Dyson Supersonic con Accesorios', price:'€329.00', originalPrice:'€429.00', discount:'-23%', rating:'4.8', reviews:'9.2K', badge:'top', badgeText:'🏆 TOP', img:'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:17, category:'belleza', name:'Plancha de Pelo GHD Platinum+ con Tecnología Predictiva', price:'€199.00', originalPrice:'€269.00', discount:'-26%', rating:'4.8', reviews:'14.7K', badge:'prime', badgeText:'📦 PRIME', img:'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:18, category:'belleza', name:'Set Cuidado Facial Vitamina C Hidratante SPF50', price:'€24.99', originalPrice:'€49.99', discount:'-50%', rating:'4.6', reviews:'6.8K', badge:'deal', badgeText:'💜 OFERTA', img:'https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:19, category:'belleza', name:'Afeitadora Braun Series 9 Pro con Base de Limpieza', price:'€199.99', originalPrice:'€319.99', discount:'-37%', rating:'4.7', reviews:'11.4K', badge:'top', badgeText:'🏆 TOP', img:'https://images.unsplash.com/photo-1621607512022-6aecc4fed814?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
+  { id:16, category:'belleza', name:'Secador Dyson Supersonic con Accesorios', price:'€329.00', originalPrice:'€429.00', discount:'-23%', rating:'4.8', reviews:'9.2K', badge:'top', badgeText:'🏆 TOP', img:'https://loremflickr.com/400/400/dyson,hairdryer,beauty?lock=16', shipping:'Prime: mañana', prime:true },
+  { id:17, category:'belleza', name:'Plancha de Pelo GHD Platinum+ con Tecnología Predictiva', price:'€199.00', originalPrice:'€269.00', discount:'-26%', rating:'4.8', reviews:'14.7K', badge:'prime', badgeText:'📦 PRIME', img:'https://loremflickr.com/400/400/hairstraightener,hairiron,styling?lock=17', shipping:'Prime: mañana', prime:true },
+  { id:18, category:'belleza', name:'Set Cuidado Facial Vitamina C Hidratante SPF50', price:'€24.99', originalPrice:'€49.99', discount:'-50%', rating:'4.6', reviews:'6.8K', badge:'deal', badgeText:'💜 OFERTA', img:'https://loremflickr.com/400/400/skincare,cosmetics,serum?lock=18', shipping:'Prime: mañana', prime:true },
+  { id:19, category:'belleza', name:'Afeitadora Braun Series 9 Pro con Base de Limpieza', price:'€199.99', originalPrice:'€319.99', discount:'-37%', rating:'4.7', reviews:'11.4K', badge:'top', badgeText:'🏆 TOP', img:'https://loremflickr.com/400/400/braun,shaver,razor?lock=19', shipping:'Prime: mañana', prime:true },
 
   // DEPORTE
-  { id:20, category:'deporte', name:'Garmin Forerunner 255 GPS Running Watch', price:'€239.99', originalPrice:'€329.99', discount:'-27%', rating:'4.8', reviews:'7.6K', badge:'top', badgeText:'🏆 TOP', img:'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:21, category:'deporte', name:'Esterilla Yoga Lululemon 5mm Antideslizante', price:'€49.99', originalPrice:'€88.00', discount:'-43%', rating:'4.7', reviews:'9.3K', badge:'prime', badgeText:'📦 PRIME', img:'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:22, category:'deporte', name:'Bicicleta Estática Plegable con Pantalla LCD', price:'€189.99', originalPrice:'€289.99', discount:'-34%', rating:'4.5', reviews:'4.2K', badge:'deal', badgeText:'💜 OFERTA', img:'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:23, category:'deporte', name:'Botella Térmica Stanley 1L Acero Inoxidable', price:'€39.99', originalPrice:'€59.95', discount:'-33%', rating:'4.9', reviews:'31.2K', badge:'top', badgeText:'🏆 TOP 1', img:'https://images.unsplash.com/photo-1523362628745-0c100150b504?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
+  { id:20, category:'deporte', name:'Garmin Forerunner 255 GPS Running Watch', price:'€239.99', originalPrice:'€329.99', discount:'-27%', rating:'4.8', reviews:'7.6K', badge:'top', badgeText:'🏆 TOP', img:'https://loremflickr.com/400/400/garmin,smartwatch,running?lock=20', shipping:'Prime: mañana', prime:true },
+  { id:21, category:'deporte', name:'Esterilla Yoga Lululemon 5mm Antideslizante', price:'€49.99', originalPrice:'€88.00', discount:'-43%', rating:'4.7', reviews:'9.3K', badge:'prime', badgeText:'📦 PRIME', img:'https://loremflickr.com/400/400/yoga,mat,fitness?lock=21', shipping:'Prime: mañana', prime:true },
+  { id:22, category:'deporte', name:'Bicicleta Estática Plegable con Pantalla LCD', price:'€189.99', originalPrice:'€289.99', discount:'-34%', rating:'4.5', reviews:'4.2K', badge:'deal', badgeText:'💜 OFERTA', img:'https://loremflickr.com/400/400/exercisebike,stationary,cycling?lock=22', shipping:'Prime: mañana', prime:true },
+  { id:23, category:'deporte', name:'Botella Térmica Stanley 1L Acero Inoxidable', price:'€39.99', originalPrice:'€59.95', discount:'-33%', rating:'4.9', reviews:'31.2K', badge:'top', badgeText:'🏆 TOP 1', img:'https://loremflickr.com/400/400/stanley,thermos,bottle?lock=23', shipping:'Prime: mañana', prime:true },
 
   // COCINA
-  { id:24, category:'cocina', name:'KitchenAid Artisan Robot de Cocina 4.8L', price:'€449.00', originalPrice:'€649.00', discount:'-31%', rating:'4.9', reviews:'18.6K', badge:'top', badgeText:'🏆 TOP', img:'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:25, category:'cocina', name:'Cuchillos Zwilling Professional S Set 3 Piezas', price:'€89.99', originalPrice:'€149.99', discount:'-40%', rating:'4.8', reviews:'7.4K', badge:'prime', badgeText:'📦 PRIME', img:'https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:26, category:'cocina', name:'Batidora de Mano Bamix Superbox 200W', price:'€119.00', originalPrice:'€179.00', discount:'-34%', rating:'4.7', reviews:'5.9K', badge:'deal', badgeText:'💜 OFERTA', img:'https://images.unsplash.com/photo-1502743780242-f10c7fd4a862?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:27, category:'cocina', name:'Olla a Presión Eléctrica Instant Pot Duo 7en1 5.7L', price:'€79.95', originalPrice:'€129.95', discount:'-38%', rating:'4.7', reviews:'22.1K', badge:'top', badgeText:'🏆 TOP', img:'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
+  { id:24, category:'cocina', name:'KitchenAid Artisan Robot de Cocina 4.8L', price:'€449.00', originalPrice:'€649.00', discount:'-31%', rating:'4.9', reviews:'18.6K', badge:'top', badgeText:'🏆 TOP', img:'https://loremflickr.com/400/400/kitchenaid,mixer,baking?lock=24', shipping:'Prime: mañana', prime:true },
+  { id:25, category:'cocina', name:'Cuchillos Zwilling Professional S Set 3 Piezas', price:'€89.99', originalPrice:'€149.99', discount:'-40%', rating:'4.8', reviews:'7.4K', badge:'prime', badgeText:'📦 PRIME', img:'https://loremflickr.com/400/400/kitchenknives,knife,chef?lock=25', shipping:'Prime: mañana', prime:true },
+  { id:26, category:'cocina', name:'Batidora de Mano Bamix Superbox 200W', price:'€119.00', originalPrice:'€179.00', discount:'-34%', rating:'4.7', reviews:'5.9K', badge:'deal', badgeText:'💜 OFERTA', img:'https://loremflickr.com/400/400/blender,handmixer,kitchen?lock=26', shipping:'Prime: mañana', prime:true },
+  { id:27, category:'cocina', name:'Olla a Presión Eléctrica Instant Pot Duo 7en1 5.7L', price:'€79.95', originalPrice:'€129.95', discount:'-38%', rating:'4.7', reviews:'22.1K', badge:'top', badgeText:'🏆 TOP', img:'https://loremflickr.com/400/400/instantpot,pressurecooker,kitchen?lock=27', shipping:'Prime: mañana', prime:true },
 
   // MASCOTAS
-  { id:28, category:'mascotas', name:'Comedero Automático para Perros y Gatos 6L App', price:'€49.99', originalPrice:'€89.99', discount:'-44%', rating:'4.6', reviews:'8.7K', badge:'prime', badgeText:'📦 PRIME', img:'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:29, category:'mascotas', name:'Cama Ortopédica Perro Memory Foam Lavable L', price:'€39.99', originalPrice:'€69.99', discount:'-43%', rating:'4.7', reviews:'6.2K', badge:'deal', badgeText:'💜 OFERTA', img:'https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:30, category:'mascotas', name:'GPS Tractive para Perros y Gatos Resistente Agua', price:'€39.99', originalPrice:'€59.99', discount:'-33%', rating:'4.5', reviews:'4.8K', badge:'new', badgeText:'✨ NUEVO', img:'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
+  { id:28, category:'mascotas', name:'Comedero Automático para Perros y Gatos 6L App', price:'€49.99', originalPrice:'€89.99', discount:'-44%', rating:'4.6', reviews:'8.7K', badge:'prime', badgeText:'📦 PRIME', img:'https://loremflickr.com/400/400/petfeeder,dogfood,cat?lock=28', shipping:'Prime: mañana', prime:true },
+  { id:29, category:'mascotas', name:'Cama Ortopédica Perro Memory Foam Lavable L', price:'€39.99', originalPrice:'€69.99', discount:'-43%', rating:'4.7', reviews:'6.2K', badge:'deal', badgeText:'💜 OFERTA', img:'https://loremflickr.com/400/400/dogbed,pet,dog?lock=29', shipping:'Prime: mañana', prime:true },
+  { id:30, category:'mascotas', name:'GPS Tractive para Perros y Gatos Resistente Agua', price:'€39.99', originalPrice:'€59.99', discount:'-33%', rating:'4.5', reviews:'4.8K', badge:'new', badgeText:'✨ NUEVO', img:'https://loremflickr.com/400/400/gpstracker,pet,dog?lock=30', shipping:'Prime: mañana', prime:true },
 
   // LIBROS
-  { id:31, category:'libros', name:'Atomic Habits - James Clear (Español)', price:'€13.99', originalPrice:'€19.99', discount:'-30%', rating:'4.9', reviews:'48.3K', badge:'top', badgeText:'🏆 BEST', img:'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:32, category:'libros', name:'El Poder del Ahora - Eckhart Tolle', price:'€9.99', originalPrice:'€15.99', discount:'-38%', rating:'4.8', reviews:'29.6K', badge:'top', badgeText:'🏆 TOP', img:'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
+  { id:31, category:'libros', name:'Atomic Habits - James Clear (Español)', price:'€13.99', originalPrice:'€19.99', discount:'-30%', rating:'4.9', reviews:'48.3K', badge:'top', badgeText:'🏆 BEST', img:'https://loremflickr.com/400/400/book,reading,habits?lock=31', shipping:'Prime: mañana', prime:true },
+  { id:32, category:'libros', name:'El Poder del Ahora - Eckhart Tolle', price:'€9.99', originalPrice:'€15.99', discount:'-38%', rating:'4.8', reviews:'29.6K', badge:'top', badgeText:'🏆 TOP', img:'https://loremflickr.com/400/400/book,library,meditation?lock=32', shipping:'Prime: mañana', prime:true },
 
   // JARDÍN
-  { id:33, category:'jardin', name:'Cortacésped Robot Gardena Sileno Life 750', price:'€499.00', originalPrice:'€749.00', discount:'-33%', rating:'4.6', reviews:'3.8K', badge:'deal', badgeText:'💜 OFERTA', img:'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=400&fit=crop', shipping:'Prime: 2-3 días', prime:false },
-  { id:34, category:'jardin', name:'Sistema Riego Automático Gardena con App', price:'€89.99', originalPrice:'€139.99', discount:'-36%', rating:'4.5', reviews:'5.1K', badge:'prime', badgeText:'📦 PRIME', img:'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
+  { id:33, category:'jardin', name:'Cortacésped Robot Gardena Sileno Life 750', price:'€499.00', originalPrice:'€749.00', discount:'-33%', rating:'4.6', reviews:'3.8K', badge:'deal', badgeText:'💜 OFERTA', img:'https://loremflickr.com/400/400/lawnmower,robot,garden?lock=33', shipping:'Prime: 2-3 días', prime:false },
+  { id:34, category:'jardin', name:'Sistema Riego Automático Gardena con App', price:'€89.99', originalPrice:'€139.99', discount:'-36%', rating:'4.5', reviews:'5.1K', badge:'prime', badgeText:'📦 PRIME', img:'https://loremflickr.com/400/400/sprinkler,irrigation,garden?lock=34', shipping:'Prime: mañana', prime:true },
 
   // MÁS TECNOLOGÍA
-  { id:35, category:'tecnologia', name:'iPad 10ª Generación 64GB WiFi Plata', price:'€399.00', originalPrice:'€519.00', discount:'-23%', rating:'4.8', reviews:'12.4K', badge:'prime', badgeText:'📦 PRIME', img:'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:36, category:'tecnologia', name:'SSD Externo Samsung T7 1TB USB 3.2', price:'€79.99', originalPrice:'€129.99', discount:'-38%', rating:'4.8', reviews:'19.7K', badge:'top', badgeText:'🏆 TOP', img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:37, category:'hogar', name:'Aspiradora Dyson V15 Detect Absolute', price:'€549.00', originalPrice:'€749.00', discount:'-27%', rating:'4.8', reviews:'8.9K', badge:'top', badgeText:'🏆 TOP', img:'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:38, category:'belleza', name:'Cepillo Eléctrico Oral-B iO Series 7 Negro', price:'€89.99', originalPrice:'€179.99', discount:'-50%', rating:'4.7', reviews:'13.6K', badge:'deal', badgeText:'💜 OFERTA', img:'https://images.unsplash.com/photo-1612538498456-e861df91d4d0?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:39, category:'cocina', name:'Tostadora Smeg TSF01 2 Ranuras Diseño Retro', price:'€79.00', originalPrice:'€119.00', discount:'-34%', rating:'4.7', reviews:'7.2K', badge:'new', badgeText:'✨ NUEVO', img:'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&h=400&fit=crop', shipping:'Prime: mañana', prime:true },
-  { id:40, category:'deporte', name:'Kettlebell Ajustable 6-30kg Hierro Fundido', price:'€89.99', originalPrice:'€149.99', discount:'-40%', rating:'4.6', reviews:'4.3K', badge:'deal', badgeText:'💜 OFERTA', img:'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=400&fit=crop', shipping:'Prime: 2-3 días', prime:false },
+  { id:35, category:'tecnologia', name:'iPad 10ª Generación 64GB WiFi Plata', price:'€399.00', originalPrice:'€519.00', discount:'-23%', rating:'4.8', reviews:'12.4K', badge:'prime', badgeText:'📦 PRIME', img:'https://loremflickr.com/400/400/ipad,tablet,apple?lock=35', shipping:'Prime: mañana', prime:true },
+  { id:36, category:'tecnologia', name:'SSD Externo Samsung T7 1TB USB 3.2', price:'€79.99', originalPrice:'€129.99', discount:'-38%', rating:'4.8', reviews:'19.7K', badge:'top', badgeText:'🏆 TOP', img:'https://loremflickr.com/400/400/ssd,harddrive,storage?lock=36', shipping:'Prime: mañana', prime:true },
+  { id:37, category:'hogar', name:'Aspiradora Dyson V15 Detect Absolute', price:'€549.00', originalPrice:'€749.00', discount:'-27%', rating:'4.8', reviews:'8.9K', badge:'top', badgeText:'🏆 TOP', img:'https://loremflickr.com/400/400/dyson,vacuum,cordless?lock=37', shipping:'Prime: mañana', prime:true },
+  { id:38, category:'belleza', name:'Cepillo Eléctrico Oral-B iO Series 7 Negro', price:'€89.99', originalPrice:'€179.99', discount:'-50%', rating:'4.7', reviews:'13.6K', badge:'deal', badgeText:'💜 OFERTA', img:'https://loremflickr.com/400/400/toothbrush,dental,oralb?lock=38', shipping:'Prime: mañana', prime:true },
+  { id:39, category:'cocina', name:'Tostadora Smeg TSF01 2 Ranuras Diseño Retro', price:'€79.00', originalPrice:'€119.00', discount:'-34%', rating:'4.7', reviews:'7.2K', badge:'new', badgeText:'✨ NUEVO', img:'https://loremflickr.com/400/400/toaster,retro,breakfast?lock=39', shipping:'Prime: mañana', prime:true },
+  { id:40, category:'deporte', name:'Kettlebell Ajustable 6-30kg Hierro Fundido', price:'€89.99', originalPrice:'€149.99', discount:'-40%', rating:'4.6', reviews:'4.3K', badge:'deal', badgeText:'💜 OFERTA', img:'https://loremflickr.com/400/400/kettlebell,dumbbell,gym?lock=40', shipping:'Prime: 2-3 días', prime:false },
 ];
 
 // =============================================
