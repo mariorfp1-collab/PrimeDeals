@@ -23,7 +23,7 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "PrimeDeals",
-  "url": "https://prime-deals-tau.vercel.app",
+  "url": "https://primedeals.blogspot.com",
   "description": "Los mejores productos de Amazon España con ofertas actualizadas diariamente",
   "potentialAction": {
     "@type": "SearchAction",
@@ -50,7 +50,7 @@ const legalPages = {
         <li>Datos de cookies: según nuestra Política de Cookies.</li>
       </ul>
       <h3>3. Finalidad del tratamiento</h3>
-      <p>Utilizamos tus datos para: mejorar la experiencia de usuario, enviar comunicaciones comerciales (solo si has dado tu consentimiento), mostrar publicidad personalizada a través de Google AdSense, y analizar el tráfico web mediante Google Analytics.</p>
+      <p>Utilizamos tus datos para: mejorar la experiencia de usuario, enviar comunicaciones comerciales (solo si has dado tu consentimiento), mostrar publicidad a través de nuestra red publicitaria Monetag, y analizar el tráfico web mediante Google Analytics.</p>
       <h3>4. Base legal</h3>
       <p>El tratamiento de tus datos se basa en tu consentimiento explícito, el interés legítimo de PrimeDeals y el cumplimiento de obligaciones legales.</p>
       <h3>5. Tus derechos</h3>
@@ -71,12 +71,12 @@ const legalPages = {
       <ul>
         <li><strong>Cookies técnicas (necesarias):</strong> Imprescindibles para el funcionamiento del sitio. No requieren consentimiento.</li>
         <li><strong>Cookies analíticas:</strong> Google Analytics para medir el tráfico y comportamiento de los usuarios.</li>
-        <li><strong>Cookies publicitarias:</strong> Google AdSense para mostrar anuncios relevantes.</li>
+        <li><strong>Cookies publicitarias:</strong> Monetag para mostrar anuncios relevantes.</li>
         <li><strong>Cookies de afiliados:</strong> Amazon Associates para rastrear las ventas generadas desde nuestro sitio.</li>
       </ul>
       <h3>Cookies de terceros</h3>
       <p>Google Analytics: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad de Google</a></p>
-      <p>Google AdSense: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Política de publicidad de Google</a></p>
+      <p>Monetag: <a href="https://monetag.com/privacy-policy/" target="_blank" rel="noopener">Política de privacidad de Monetag</a></p>
       <p>Amazon Associates: <a href="https://affiliate-program.amazon.es/help/operating/policies" target="_blank" rel="noopener">Política del programa de afiliados de Amazon</a></p>
       <h3>Cómo gestionar las cookies</h3>
       <p>Puedes configurar tu navegador para rechazar todas o algunas cookies, o para que te avise cuando los sitios web las utilicen. Sin embargo, si desactivas o rechazas las cookies, algunas partes del sitio pueden volverse inaccesibles.</p>
@@ -2144,14 +2144,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
       </form>
     </div>
 
-   
+
+  </div>
+
   <!-- SIDEBAR -->
   <aside class="sidebar" aria-label="Panel lateral">
     <div class="sidebar-widget">
       <h3 class="widget-title">🏆 Top Amazon</h3>
       <div id="trendingList"></div>
     </div>
-   
     <div class="sidebar-widget">
       <h3 class="widget-title">📂 Categorías</h3>
       <ul style="list-style:none;display:flex;flex-direction:column;gap:0.4rem;">
@@ -2164,7 +2165,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
         <li><button onclick="filterProducts('mascotas')" style="width:100%;text-align:left;padding:0.55rem 0.8rem;border-radius:10px;font-size:0.85rem;transition:all 0.2s;display:flex;justify-content:space-between;font-weight:500;">🐾 Mascotas <span>→</span></button></li>
       </ul>
     </div>
-    
   </aside>
 </main>
 
